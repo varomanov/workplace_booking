@@ -11,6 +11,5 @@ class Place(Base):
     floor: Mapped[int] = mapped_column(SmallInteger, nullable=False)
     is_public: Mapped[bool] = mapped_column(Boolean, default=False, nullable=False)
 
-    @classmethod
     def to_str(self):
         return f'{self.section}/{self.number}'
