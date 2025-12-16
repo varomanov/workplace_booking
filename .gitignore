@@ -5,6 +5,6 @@ __pycache__/
 .idea/
 .vscode/
 *.tmp
-*.db
+*.exe
 *.sqlite
 *.sqlite3

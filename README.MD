@@ -11,7 +11,17 @@ python3 -m venv .env
 source .env/bin/activate
 ```
 
-3. Установить нужные библиотеки в виртуальное окружение
+3. Установить pip-tools
+```
+py -m pip install pip-tools
+```
+
+4. Скомпилировать новый requirements.txt (при необходимости)
+```
+pip-compile --output-file=- > requirements.txt 
+```
+
+5. Установить нужные библиотеки в виртуальное окружение
 ```
 pip install -r requirements.txt
 ```
